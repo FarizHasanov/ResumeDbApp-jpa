@@ -61,6 +61,7 @@ public class User implements Serializable {
     private String email;
     @Basic(optional = false)
     @Column(name = "phone")
+    
     private String phone;
     @Lob
     @Column(name = "profile_Description")

@@ -14,9 +14,13 @@ import java.util.List;
  */
 public interface UserDaoInter {
 
-    public List<User> getAll(String name,String surname,Integer nationalityId);
+    public List<User> getAll(String name, String surname, Integer nationalityId);
 
     public User getById(int id);
+
+    public User findByEmailAndPasswordd(String email, String passwordd);
+
+    public User findByEmail(String email);
 
     public boolean updateUser(User u);
 
